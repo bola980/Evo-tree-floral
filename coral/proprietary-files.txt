@@ -233,7 +233,7 @@ system_ext/etc/permissions/com.google.android.camera.extensions.xml
 system_ext/framework/com.google.android.camera.extensions.jar
 
 # HBM
-system_ext/priv-app/HbmSVManager/HbmSVManager.apk|264d1df992c3bc11d27b83b7a19deb606f866fc2
+system_ext/priv-app/HbmSVManager/HbmSVManager.apk|d1064605f115bf0909a3890726015f1419ea543f
 
 # Hotword
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
@@ -558,12 +558,15 @@ system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 system_ext/etc/permissions/com.android.omadm.radioconfig.xml
 system_ext/etc/permissions/com.google.euiccpixel.permissions.xml
 system_ext/etc/permissions/com.google.euiccpixel.xml
+system_ext/etc/permissions/google-ril.xml
 system_ext/framework/RadioConfigLib.jar
+system_ext/framework/google-ril.jar
 system_ext/priv-app/EuiccGoogle/esim-a1.img
 system_ext/priv-app/EuiccGoogle/esim-a2.img
 system_ext/priv-app/EuiccSupportPixel/EuiccSupportPixel.apk;PRESIGNED
 system_ext/priv-app/EuiccSupportPixel/esim-full-v1.img
 system_ext/priv-app/EuiccSupportPixelPermissions/EuiccSupportPixelPermissions.apk;PRESIGNED
+system_ext/priv-app/grilservice/grilservice.apk;PRESIGNED
 
 # SecureUI
 system_ext/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk
