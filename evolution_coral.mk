@@ -41,19 +41,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_product.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 
-# Inherit some common PixelExperience stuff.
-TARGET_BOOT_ANIMATION_RES := 1080
+# Inherit some common EvolutioX stuff
+TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := false
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
-$(call inherit-product, device/google/coral/device-flame.mk)
+$(call inherit-product, device/google/coral/device-coral.mk)
 $(call inherit-product-if-exists, vendor/google_devices/coral/proprietary/device-vendor.mk)
-$(call inherit-product-if-exists, vendor/google_devices/coral/prebuilts/device-vendor-flame.mk)
+$(call inherit-product-if-exists, vendor/google_devices/coral/prebuilts/device-vendor-coral.mk)
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
+    $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
 
 # Don't build super.img.
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -72,14 +72,17 @@ endif
 
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := google
-PRODUCT_NAME := aosp_flame
-PRODUCT_DEVICE := flame
-PRODUCT_MODEL := Pixel 4
+PRODUCT_NAME := evolution_coral
+PRODUCT_DEVICE := coral
+PRODUCT_MODEL := Pixel 4 XL
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=flame \
-    PRIVATE_BUILD_DESC="flame-user 13 TP1A.221005.002 9012097 release-keys"
+    TARGET_PRODUCT=coral \
+    PRIVATE_BUILD_DESC="coral-user 13 TP1A.221005.002 9012097 release-keys"
 
-BUILD_FINGERPRINT := google/flame/flame:13/TP1A.221005.002/9012097:user/release-keys
+BUILD_FINGERPRINT := google/coral/coral:13/TP1A.221005.002/9012097:user/release-keys
 
-$(call inherit-product, vendor/google/flame/flame-vendor.mk)
+$(call inherit-product, vendor/google/coral/coral-vendor.mk)
+
+#EvoX
+EVO_BUILD_TYPE := OFFICIAL

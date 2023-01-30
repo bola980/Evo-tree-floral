@@ -21,11 +21,11 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_coral.mk \
-    $(LOCAL_DIR)/aosp_flame.mk \
+    $(LOCAL_DIR)/evolution_coral.mk \
+    $(LOCAL_DIR)/evolution_flame.mk \
     $(LOCAL_DIR)/aosp_coral_hwasan.mk \
     $(LOCAL_DIR)/aosp_flame_hwasan.mk \
 
 COMMON_LUNCH_CHOICES := \
-    aosp_coral-userdebug \
-    aosp_flame-userdebug \
+    evolution_coral-userdebug \
+    evolution_flame-userdebug \

@@ -18,7 +18,8 @@ PRODUCT_HARDWARE := flame
 
 include device/google/coral/device-common.mk
 
-DEVICE_PACKAGE_OVERLAYS += device/google/coral/flame/overlay
+DEVICE_PACKAGE_OVERLAYS += device/google/coral/flame/overlay\
+                           device/google/coral/flame/overlay-evolution
 
 # Audio XMLs for flame
 PRODUCT_COPY_FILES += \
